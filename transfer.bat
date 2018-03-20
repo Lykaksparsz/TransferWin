@@ -3,7 +3,7 @@
 @REM And setting up.
 SET "Files=%1"
 SET /A TmpNumber=(%RANDOM%*100)/998+101
-SET "CUrl=C:\transferwin\curl\bin\curl.exe"
+SET "CUrl=%cd%\curl\bin\curl.exe"
 SET "TempFiles=transfer%TmpNumber%"
 @REM Creating temp file.
 ECHO. >> "%cd%\%TempFiles%"
