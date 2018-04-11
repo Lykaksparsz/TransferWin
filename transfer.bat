@@ -2,7 +2,7 @@
 @REM Getting files by using arguments,
 @REM And setting up.
 SET "MainFolder=%~dp0"
-SET "Files=%cd%\%1"
+SET "Files=%1"
 SET /A TmpNumber=(%RANDOM%*100)/998+101
 SET "CUrl=%MainFolder%\curl\bin\curl.exe"
 SET "TempFiles=transfer%TmpNumber%"
